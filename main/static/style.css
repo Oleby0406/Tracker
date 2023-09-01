@@ -1,0 +1,21 @@
+table, td {
+    border: 1px solid;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.timeTable {
+    margin-top: 2em;
+    width: 70%;
+}
+
+.tableLabel {
+    font-weight: bold;
+}
+
+body {
+    margin-left: 2em;
+}
