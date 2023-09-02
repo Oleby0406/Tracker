@@ -29,7 +29,7 @@ timeArray = ['12:00', '12:30', '13:00', '13:30', '14:00', '14:30', '15:00', '15:
 response = requests.request("GET", url, data=payload, headers=headers)
 data = json.loads(response.text)
 
-f = open("libraryCollectedData.txt", "a")
+f = open("main\static\libraryCollectedData.txt", "a")
 f.write(str(time.ctime()) + "\n")
 
 def getData():

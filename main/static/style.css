@@ -3,19 +3,54 @@ table, td {
     text-align: center;
 }
 
+h1, h2, h3 {
+    color: #33334d;
+}
+
+a {
+    font-size: 20px;
+    color: #7070db;
+}
+
+a:hover {
+    font-size: 20px;
+    color: #3333cc;
+}
+
+table {
+    color: #33334d;
+}
+
 table {
     border-collapse: collapse;
 }
 
+body {
+    background-color: #d1d1e0;
+}
+
 .timeTable {
     margin-top: 2em;
-    width: 70%;
+    width: 100%;
 }
 
 .tableLabel {
     font-weight: bold;
 }
 
-body {
-    margin-left: 2em;
+.content {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.graph {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
 }

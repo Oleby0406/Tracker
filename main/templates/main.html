@@ -7,25 +7,30 @@
     </head>
 
     <body>
-        <h1>Average Occupancy over Time</h1>
-        <a href="#">Github</a>
-        <h3>{{ timeRange }}</h3>
-        <img src="{% static 'graph.png' %}">
-        <table class = "timeTable">
-            <tr>
-                <td class="tableLabel">Time</td>
-                {% for time in times %}
-                    <td>{{time}}</td>
-                {% endfor %}
-            </tr>
-            <tr>
-                <td class="tableLabel">Average Occupancy</td>
-                {% for average in averages %}
-                    <td>{{average}}</td>
-                {% endfor %}
-            </tr>
-        </table>
-        <h2>{{ min }}</h2>
-        <h2>{{ max }}</h2>
+        <div class="content">
+            <h1>Average Occupancy over Time</h1>
+            <div class="links">
+                <a href="https://github.com/Oleby0406/Tracker" target="_blank" class="github">Github</a>
+                <a href="{% static 'libraryCollectedData.txt' %}" target="_blank">Raw data</a>
+            </div>
+            <h3>{{ timeRange }}</h3>
+            <img src="{% static 'graph.png' %}" class="graph">
+            <table class = "timeTable">
+                <tr>
+                    <td class="tableLabel">Time</td>
+                    {% for time in times %}
+                        <td>{{time}}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <td class="tableLabel">Average Occupancy</td>
+                    {% for average in averages %}
+                        <td>{{average}}</td>
+                    {% endfor %}
+                </tr>
+            </table>
+            <h2>{{ min }}</h2>
+            <h2>{{ max }}</h2>
+        </div>
     </body>
 </html>
