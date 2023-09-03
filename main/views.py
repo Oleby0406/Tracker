@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-sharedVars = open("sharedVars.txt", "r")
+sharedVars = open("main/sharedVars.txt", "r")
 content = sharedVars.readlines()
 
 def main(request):
