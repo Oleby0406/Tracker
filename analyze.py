@@ -30,7 +30,7 @@ latestDate = content[len(content) - 4][:-1]
 
 data.close()
 
-sharedVars = open("sharedVars.txt", "w")
+sharedVars = open("main\sharedVars.txt", "w")
 sharedVars.write("[" + ', '.join(str(x) for x in timeList) + "]" + "\n")
 sharedVars.write("[" + ', '.join(str(round(x, 2)) for x in average) + "]" + "\n")
 sharedVars.write("Minimum is: " + str(round(minimumFullness * 100, 2)) + "% at " + minimumFullnessTime + "\n")
