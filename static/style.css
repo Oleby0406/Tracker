@@ -1,3 +1,7 @@
+body {
+    overflow-y: hidden;
+}
+
 table, td {
     border: 1px solid;
     text-align: center;
@@ -7,14 +11,21 @@ h1, h2, h3 {
     color: #33334d;
 }
 
+h2 {
+    font-size: 20px;
+}
+
 a {
     font-size: 20px;
     color: #7070db;
 }
 
 a:hover {
-    font-size: 20px;
     color: #3333cc;
+}
+
+#intext {
+    font-size: 16px;
 }
 
 table {

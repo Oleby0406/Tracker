@@ -13,6 +13,14 @@
                 <a href="https://github.com/Oleby0406/Tracker" target="_blank" class="github">Github</a>
                 <a href="{% static 'libraryCollectedData.txt' %}" target="_blank">Raw data</a>
             </div>
+            <p>Tracking the occupancy of the UCSD Geisel Library by scraping
+                the occupancy from the 
+                <a id="intext" href="https://library.ucsd.edu/assets/availability/mobile/index.html"> library website.</a> 
+                The data is collected every half an hour from 
+                12:00pm until the closing time every day of the week. Then the 
+                occupancy at each time is averaged across every day
+                collected to obtain the numbers below. 
+            </p>
             <h3>{{ timeRange }}</h3>
             <img src="{% static 'graph.png' %}" class="graph">
             <table class = "timeTable">
